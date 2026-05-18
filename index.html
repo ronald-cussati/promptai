@@ -1421,7 +1421,7 @@
       <div class="nav-pill-wrap">
         <span class="nav-pill">
           <span class="status-dot"></span>
-          funcional · gemini 2.5 flash
+          funcional · gemini 3.1 flash-lite
         </span>
       </div>
       <div class="nav-actions">
@@ -1622,7 +1622,7 @@
           <label class="s-label" for="apiInput">Chave da API Gemini</label>
           <input type="password" id="apiInput" placeholder="AIzaSy..." autocomplete="off">
           <p class="s-note">Obtenha grátis em <a href="https://aistudio.google.com/app/apikey" target="_blank"
-              rel="noopener">aistudio.google.com/app/apikey</a><br>Limite gratuito: 60 req/min com Gemini 2.5 Flash</p>
+              rel="noopener">aistudio.google.com/app/apikey</a><br>Limite gratuito: 60 req/min com Gemini 3.1 Flash-Lite</p>
         </div>
         <div class="s-group">
           <label class="s-label">Tema</label>
@@ -1689,7 +1689,7 @@
         <div class="help-notes">
           <p class="help-note-title">Observações importantes</p>
           <ul>
-            <li>O limite gratuito é de 60 requisições por minuto com Gemini 2.5 Flash</li>
+            <li>O limite gratuito é de 60 requisições por minuto com Gemini 3.1 Flash-lite</li>
             <li>Seus prompts salvos ficam apenas no seu navegador (localStorage)</li>
             <li>Nenhum dado é enviado para servidores externos além da API Google</li>
             <li>O app funciona 100% no frontend, sem backend</li>
@@ -1851,7 +1851,7 @@
       };
 
       try {
-        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${key}`,
+        const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${key}`,
           { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
         if (res.status === 429) { toast('Limite de requests excedido. Aguarde.', 'warn'); setLoad(false); return; }
         if (!res.ok) {
