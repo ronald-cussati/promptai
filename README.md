@@ -25,9 +25,8 @@ O projeto foi desenvolvido com foco em usabilidade, performance e privacidade �
 
 | Tecnologia | Finalidade |
 |------------|------------|
-| JavaScript (Vanilla) | Lógica da aplicação |
-| HTML5 | Estrutura das páginas |
-| CSS3 | Estilização e design responsivo |
+| HTML5 | Estrutura e estilos da página |
+| JavaScript (Vanilla) | Lógica da aplicação e consumo da API |
 | Gemini API | Geração dos prompts |
 | localStorage | Armazenamento local do histórico |
 
@@ -56,13 +55,12 @@ Clique em **"Gerar Prompt"** ou pressione `Ctrl + Enter` e copie o resultado.
 ## Estrutura do Projeto
 ```
 promptai/
-├── index.html          # Página principal
-├── styles.css          # Estilos da aplicação
-├── script.js           # Lógica JavaScript
+├── index.html          # Aplicação completa (HTML + CSS + JS)
 └── assets/
-    ├── favicon.ico     # Favicon do projeto
-    └── ...             # Imagens e recursos
+    └── favicon.png     # Favicon do projeto
 ```
+
+> **Nota:** Todo o código está em um único arquivo `index.html` — HTML, CSS e JavaScript reunidos para simplicidade e portabilidade.
 
 ## Licença
 
